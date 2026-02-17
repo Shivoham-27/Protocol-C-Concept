@@ -47,13 +47,13 @@ Traditional Client-Side CMPs (like OneTrust/Cookiebot) are broken:
 
 
 1.  **🛑 Interception:** User requests `example.com`. The **Edge Node** catches the request.
-2.  [cite_start]**🎫 Verification:** The Edge checks the **Bloom Filter**: *Is this user's token valid?*[cite: 65].
-3.  [cite_start]**📥 Fetch:** The Edge asks the Origin Server for the raw HTML[cite: 65].
+2.  [cite_start]**🎫 Verification:** The Edge checks the **Bloom Filter**: *Is this user's token valid?*.
+3.  [cite_start]**📥 Fetch:** The Edge asks the Origin Server for the raw HTML.
 4.  **🧹 Scrubbing (The Loop):**
     * *Rewriter* strips bad tags.
     * *Injector* adds security nonces.
-5.  [cite_start]**📝 Audit:** The Edge asynchronously pushes a **Tamper-Proof Log** to a Transparency Server (RFC 6962)[cite: 68].
-6.  [cite_start]**🚀 Delivery:** The user receives a clean, fast, and safe page[cite: 67].
+5.  [cite_start]**📝 Audit:** The Edge asynchronously pushes a **Tamper-Proof Log** to a Transparency Server (RFC 6962).
+6.  [cite_start]**🚀 Delivery:** The user receives a clean, fast, and safe page.
 
 ---
 
@@ -61,10 +61,10 @@ Traditional Client-Side CMPs (like OneTrust/Cookiebot) are broken:
 
 | Metric | ❌ Client-Side CMP | ✅ Protocol-C (Edge) | 🏆 Improvement |
 | :--- | :--- | :--- | :--- |
-| **First Paint (FCP)** | 1.2s | **0.4s** | [cite_start]**66% Faster** [cite: 523] |
-| **Blocking Time (TBT)**| 450ms | **10ms** | [cite_start]**97% Less Lag** [cite: 523] |
-| **Visual Stability (CLS)**| 0.15 (Jumpy) | **0.0 (Perfect)** | [cite_start]**100% Stable** [cite: 523] |
-| **Security** | Vulnerable | **Fail-Closed** | [cite_start]**Defense-Grade** [cite: 505] |
+| **First Paint (FCP)** | 1.2s | **0.4s** | **66% Faster**  |
+| **Blocking Time (TBT)**| 450ms | **10ms** | **97% Less Lag**  |
+| **Visual Stability (CLS)**| 0.15 (Jumpy) | **0.0 (Perfect)** | **100% Stable** |
+| **Security** | Vulnerable | **Fail-Closed** | **Defense-Grade**|
 
 ---
 
